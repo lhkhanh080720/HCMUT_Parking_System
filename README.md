@@ -30,7 +30,7 @@ Parking system in/out by magnetic card and image processing.
 
 **Besides**: Because the circuit runs completely in a loop, to avoid unexpected program crashes, the system uses the watchdog timer function to avoid.
 
-**Besides**: [link code][1]
+**Code**: [link code][1]
 ***
 # RESULT
 #### Video demo: [Video][2]
@@ -39,7 +39,7 @@ Parking system in/out by magnetic card and image processing.
 # REPORT
 [link report][3]
 
-[1]: <>
-[2]: <>
-[3]: <>
+[1]: <https://github.com/lhkhanh080720/HCMUT_Parking_System/tree/main/Code/Main_STM/Main>
+[2]: <https://github.com/lhkhanh080720/HCMUT_Parking_System/blob/main/Step%201/MAIN_DO_AN.mp4>
+[3]: <https://github.com/lhkhanh080720/HCMUT_Parking_System/blob/main/Report/B%C3%A1o%20c%C3%A1o%20%C4%90%E1%BB%93%20%C3%A1n%20(L%C3%AA%20H%E1%BB%AFu%20Kh%C3%A1nh%20-%20B%C3%B9i%20Trung%20Ki%C3%AAn).pdf>
 
