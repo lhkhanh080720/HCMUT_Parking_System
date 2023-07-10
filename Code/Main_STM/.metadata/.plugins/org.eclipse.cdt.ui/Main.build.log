@@ -1,0 +1,41 @@
+16:24:55 **** Incremental Build of configuration Debug for project Main ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:164:11: warning: comparison between pointer and integer
+  164 |      if(c != "D" && c != "E")  continue;
+      |           ^~
+../Core/Src/main.c:164:11: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../Core/Src/main.c:164:23: warning: comparison between pointer and integer
+  164 |      if(c != "D" && c != "E")  continue;
+      |                       ^~
+../Core/Src/main.c:164:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../Core/Src/main.c:217:11: warning: comparison between pointer and integer
+  217 |      if(c != "D" && c != "E")        continue;
+      |           ^~
+../Core/Src/main.c:217:11: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../Core/Src/main.c:217:23: warning: comparison between pointer and integer
+  217 |      if(c != "D" && c != "E")        continue;
+      |                       ^~
+../Core/Src/main.c:217:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../Core/Src/main.c: In function 'Check':
+../Core/Src/main.c:439:1: warning: control reaches end of non-void function [-Wreturn-type]
+  439 | }
+      | ^
+arm-none-eabi-gcc -o "Main.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\USER\Desktop\Main_STM\Main\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Main.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Main.elf
+ 
+arm-none-eabi-size   Main.elf 
+arm-none-eabi-objdump -h -S  Main.elf  > "Main.list"
+arm-none-eabi-objcopy  -O binary  Main.elf  "Main.bin"
+   text	   data	    bss	    dec	    hex	filename
+  22840	     36	   2004	  24880	   6130	Main.elf
+Finished building: default.size.stdout
+ 
+Finished building: Main.bin
+ 
+Finished building: Main.list
+ 
+
+16:24:56 Build Finished. 0 errors, 9 warnings. (took 1s.13ms)
+
