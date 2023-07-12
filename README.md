@@ -1,6 +1,6 @@
 # INTRODUCE
 Parking system in/out by magnetic card and image processing.
-(In this system, my task is to build the system, and for image rocessing, others do it).
+(In this system, my task is to build the system, and for image processing, others do it).
 ***
 # HARDWARE 
 #### List of main devices
